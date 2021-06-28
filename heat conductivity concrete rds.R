@@ -8,7 +8,6 @@ DESCRIPTION
 
 #----------------------------------- RETRIEVE DATA -----------------------------------
 library(dplyr)
-setwd("C:/Users/HAVO/Desktop/Han R repo/Warmtegeleiding/")
 df <- readRDS(file="df.rds")
 
 #----------------------------------- MAKE REGRESSION -----------------------------------
@@ -48,7 +47,7 @@ p +
   labs (
     title ="Heat Conductivity vs Apperent Density", 
     subtitle = bquote(.(subt_1)^.(subt_2)), 
-    x = "Ds 815°C (g/ml)",
+    x = "Ds 815Â°C (g/ml)",
     y = expression(paste(lambda," (W/m/K)")),
     color=expression("Al"[2]*"O"[3])
   ) +
